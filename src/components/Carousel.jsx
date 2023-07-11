@@ -29,13 +29,13 @@ const Carousel = () => {
   };
   return (
     <section
-      className="bg-cover bg-center duration-700"
+      className="bg-cover bg-center h-full duration-700"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Navbar />
 
       <div className="flex flex-col gap-9 items-center justify-center h-screen">
-        <div className="absolute -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <div className="absolute -translate-x-0 translate-y-[-50%] left-1 sm:left-5 text-2xl rounded-full sm:p-2 sm:bg-black/20 text-white cursor-pointer">
           <BsChevronCompactLeft size={30} onClick={handleClick} />
         </div>
         <div className="flex gap-2 text-[#ffa800]" onClick={handleClick}>
@@ -46,16 +46,16 @@ const Carousel = () => {
           <AiFillStar />
         </div>
         <p
-          className="text-[84px] text-white font-thin font-garamond leading-[79px] text-center"
+          className="text-[41px] md:text-[55px] lg:text-[84px] text-white font-thin font-garamond leading-[38px] md:leading-[52px] lg:leading-[79px] text-center"
           dangerouslySetInnerHTML={{ __html: displayText }}
         />
-        <button className="text-white flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px] group hover:text-black hover:bg-white">
+        <button className="text-white transition ease-in-out flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px] group hover:text-black hover:bg-white">
           BOOK NOW
           <span>
             <MdOutlineKeyboardArrowRight className="text-brownie text-[25px] font-semibold group-hover:text-black" />
           </span>
         </button>
-        <div className="absolute -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <div className="absolute -translate-x-0 translate-y-[-50%] right-0.5 sm:right-5 text-2xl rounded-full sm:p-2 sm:bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight size={30} onClick={handleClick} />
         </div>
       </div>
