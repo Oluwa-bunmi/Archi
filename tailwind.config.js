@@ -8,10 +8,14 @@ export default {
         dark: "rgba(34, 34, 34, .75)",
         brownie: "#bf9156",
         creamy: "rgb(239, 231, 211)",
+        
       },
       fontFamily: {
         roboto: "'Roboto', sans-serif",
         garamond: "'Cormorant Garamond', serif",
+      },
+      backgroundImage: {
+        testimonialBg: "url('../src/assets/testimonialBg.jpg')",
       },
     },
   },
