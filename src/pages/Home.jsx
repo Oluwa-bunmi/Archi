@@ -3,6 +3,7 @@ import decorOne from "../assets/decorOne.jpg";
 import decorTwo from "../assets/decorTwo.jpg";
 import { Link } from "react-router-dom";
 import Testimonial from "../components/Testimonial";
+import Suites from "../components/Suites";
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ const Home = () => {
       <section className="bg-testimonialBg bg-cover bg-center py-20">
         <Testimonial />
       </section>
+      <Suites />
     </>
   );
 };

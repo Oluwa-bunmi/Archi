@@ -2,10 +2,12 @@ import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
+// import HeroOne from "../src/assets/HeroImageOne.jpg";
+// import HeroTwo from "../src/assets/HeroImageTwo.jpg";
 import Navbar from "./Navbar";
 const Carousel = () => {
   const [backgroundImage, setBackgroundImage] = useState(
-    "https://www.madebydesignesia.com/themes/archi/images-hotel/slider/1.jpg"
+    "../src/assets/HeroImageOne.jpg"
   );
   const [displayText, setDisplayText] = useState(
     "Enjoy a Luxury<br>Experience"
@@ -14,16 +16,12 @@ const Carousel = () => {
   const handleClick = () => {
     if (
       backgroundImage ===
-      "https://www.madebydesignesia.com/themes/archi/images-hotel/slider/1.jpg"
+      "../src/assets/HeroImageOne.jpg"
     ) {
-      setBackgroundImage(
-        "https://www.madebydesignesia.com/themes/archi/images-hotel/slider/2.jpg"
-      );
+      setBackgroundImage("../src/assets/HeroImageTwo.jpg");
       setDisplayText("Your Perfect<br>Healing");
     } else {
-      setBackgroundImage(
-        "https://www.madebydesignesia.com/themes/archi/images-hotel/slider/1.jpg"
-      );
+      setBackgroundImage("../src/assets/HeroImageOne.jpg");
       setDisplayText("Enjoy a Luxury<br>Experience");
     }
   };
