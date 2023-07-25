@@ -1,10 +1,4 @@
 import { BsDot } from "react-icons/bs";
-import { TbPlaystationCircle } from "react-icons/tb";
-import { PiCircleDashedFill } from "react-icons/pi";
-import { BsRecordCircleFill } from "react-icons/bs";
-import { BsRecordCircle } from "react-icons/bs";
-// import { FaDotCircle } from "react-icons/fa";
-// import { GrEmptyCircle } from "react-icons/gr";
 import { features } from "../constants/data";
 const Feautures = () => {
   return (
@@ -20,12 +14,9 @@ const Feautures = () => {
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
         {features.map((item, i) => (
           <div className="flex items-start gap-3" key={i}>
-            {/* <div className="w-[80px] h-[80px] rounded-full flex items-center p-5 bg-[#bf9156] text-white"> */}
-            {/* <item.icon className="text-[50px]" /> */}
             <div className="text-[50px] w-[80px] h-[80px] rounded-full flex items-center p-5 bg-[#bf9156] text-white">
               {item.icon}
             </div>
-            {/* </div> */}
             <div>
               <h3 className="text-[#222] text-[24px] font-garamond font-semibold mb-[15px]">
                 {item.heading}

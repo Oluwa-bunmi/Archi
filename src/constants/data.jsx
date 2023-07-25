@@ -3,10 +3,7 @@ import secondSuite from "../assets/deluxeSuite.jpg";
 import thirdSuite from "../assets/luxurySuite.jpg";
 import { PiCircleDashedFill } from "react-icons/pi";
 import { WiTime7 } from "react-icons/wi";
-import { PiPuzzlePieceBold } from "react-icons/pi";
-import { BsPuzzle } from "react-icons/bs";
-import { BsCup } from "react-icons/bs";
-import { PiLockThin } from "react-icons/pi";
+import { BsCup, BsPuzzle } from "react-icons/bs";
 import { TbLock } from "react-icons/tb";
 import { BiSolidTrafficCone } from "react-icons/bi";
 
