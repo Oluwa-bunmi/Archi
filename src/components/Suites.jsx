@@ -14,25 +14,25 @@ const Suites = () => {
         <hr className="w-[300px] border-borderHr" />
       </div>
       <div className="grid gap-7 lg:grid-cols-3">
-        {suitesInfo.map(({ price, room, image, details }) => (
-          <div className="relative h-[350px] overflow-hidden group container">
+        {suitesInfo.map((item, i) => (
+          <div className="relative h-[350px] overflow-hidden group container" key={i}>
             <Link className="absolute w-full min-h-[100%] z-[1] bg-borderHr">
               <div className="slideIn m-[30px] w-[83%] text-white absolute bottom-0 group-hover:w-full group-hover:h-full group-hover:bg-dark group-hover:m-0 group-hover:p-[30px]">
-                <p className="font-garamond text-[24px] mt-6">{price}</p>
+                <p className="font-garamond text-[24px] mt-6">{item.price}</p>
                 <div className="flex gap-2 border-b items-center border-light pb-[10px]">
                   <BiCircle className="text-[#bf9156] text-[28px] group-hover:text-white" />
                   <h2 className="font-garamond text-[24px] font-semibold">
-                    {room}
+                    {item.room}
                   </h2>
                 </div>
                 <div className="hidden group-hover:block text-[17px] font-light leading-[30px] font-roboto">
-                  <p className="mt-4">{details}</p>
+                  <p className="mt-4">{item.details}</p>
                 </div>
               </div>
             </Link>
             <div
               className="absolute w-[110%] h-[110%] ml-[-5%] suite group-hover:ml-0 smooth"
-              style={{ backgroundImage: `url(${image})` }}
+              style={{ backgroundImage: `url(${item.image})` }}
             ></div>
           </div>
         ))}

@@ -4,6 +4,7 @@ import decorTwo from "../assets/decorTwo.jpg";
 import { Link } from "react-router-dom";
 import Testimonial from "../components/Testimonial";
 import Suites from "../components/Suites";
+import Feautures from "../components/Features";
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
         <Testimonial />
       </section>
       <Suites />
+      <Feautures />
     </>
   );
 };
