@@ -9,6 +9,7 @@ export default {
         brownie: "#bf9156",
         creamy: "rgb(239, 231, 211)",
         borderHr: "rgba(0,0,0,.1)",
+        overlay: "rgba(0,0,0, .5)",
       },
       fontFamily: {
         roboto: "'Roboto', sans-serif",

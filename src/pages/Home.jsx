@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Testimonial from "../components/Testimonial";
 import Suites from "../components/Suites";
 import Feautures from "../components/Features";
+import Vid from "../components/Vid";
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
       </section>
       <Suites />
       <Feautures />
+      <Vid />
     </>
   );
 };
