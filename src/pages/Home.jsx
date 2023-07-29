@@ -6,6 +6,7 @@ import Testimonial from "../components/Testimonial";
 import Suites from "../components/Suites";
 import Feautures from "../components/Features";
 import Vid from "../components/Vid";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -44,6 +45,7 @@ const Home = () => {
       <Suites />
       <Feautures />
       <Vid />
+      <Footer />
     </>
   );
 };

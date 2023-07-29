@@ -27,14 +27,6 @@ const Vid = () => {
           <AiFillStar />
           <AiFillStar />
         </div>
-        {/* <video
-        src={videoBg}
-        className="object-cover w-full h-full"
-        autoPlay
-        loop
-        muted
-      /> */}
-        {/* <div className="absolute top-0 left-0 bg-gray-900/30 w-full h-full"></div> */}
       </div>
     </div>
   );
