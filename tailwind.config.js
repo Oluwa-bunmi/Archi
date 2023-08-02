@@ -14,9 +14,11 @@ export default {
       fontFamily: {
         roboto: "'Roboto', sans-serif",
         garamond: "'Cormorant Garamond', serif",
+        dosis: "'Dosis', sans-serif",
       },
       backgroundImage: {
         testimonialBg: "url('../src/assets/testimonialBg.jpg')",
+        contactBg: "url('../src/assets/contactBg.jpg')",
       },
     },
   },
