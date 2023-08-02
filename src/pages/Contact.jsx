@@ -19,10 +19,62 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <section className="grid grid-cols-3 items-center md:px-28 px-5">
+      <section className="bg-[#18191B] text-[#eee] pt-4 pb-[90px] grid gap-7 grid-cols-3 md:px-28 px-5">
         <div>
-          <h1>SEND US A MESSAGE</h1>
-          
+          <h1 className="font-dosis tracking-[3px] text-[18px] font-normal mb-[20px]">
+            SEND US A MESSAGE
+          </h1>
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            className="w-full p-[10px] mb-[20px] border border-light bg-borderHr"
+          />
+          <input
+            type="text"
+            placeholder="Your Email"
+            name="email"
+            className="w-full p-[10px] mb-[20px] border border-light bg-borderHr"
+          />
+          <input
+            type="text"
+            placeholder="Your Phone"
+            name="phone"
+            className="w-full p-[10px] mb-[20px] border border-light bg-borderHr"
+          />
+        </div>
+        {/* <div> */}
+        <textarea
+          name=""
+          id=""
+          cols="10"
+          rows="7"
+          placeholder="Your Message"
+          className="p-[10px] border border-light bg-borderHr resize-none"
+        ></textarea>
+        {/* </div> */}
+        <div>
+          <h1 className="font-dosis tracking-[3px] text-[18px] font-normal mb-[20px]">
+            CONTACT INFO
+          </h1>
+          <ul>
+            <li className="py-[2px] border-b border-[#222] mb-2">
+              <b className="text-[#FAB702] mr-2">Address:</b> 100 S Main St, Los
+              Angeles, CA
+            </li>
+            <li className="py-[2px] border-b border-[#222] mb-2">
+              <b className="text-[#FAB702] mr-2">Phone:</b>
+              (208) 333 9296
+            </li>
+            <li className="py-[2px] border-b border-[#222] mb-2">
+              <b className="text-[#FAB702] mr-2">Email:</b>
+              contact@example.com
+            </li>
+            <li className="py-[2px] border-b border-[#222]">
+              <b className="text-[#FAB702] mr-2">Open</b> Sunday - Friday 08:00
+              - 18:00
+            </li>
+          </ul>
         </div>
       </section>
     </div>
