@@ -29,10 +29,10 @@ const Header = () => {
             <NavLink>Contact</NavLink>
           </li>
         </ul>
-        <button className="hidden transition ease-in-out group hover:bg-brownie hover:text-black hover:border-brownie lg:flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px]">
+        <button className="hidden transition ease-in-out group hover:bg-[#FAB702] hover:text-black hover:border-brownie lg:flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px]">
           BOOKING
           <span>
-            <MdOutlineKeyboardArrowRight className="text-brownie text-[25px] font-semibold group-hover:text-black" />
+            <MdOutlineKeyboardArrowRight className="text-[#FAB702]text-[25px] font-semibold group-hover:text-black" />
           </span>
         </button>
 
