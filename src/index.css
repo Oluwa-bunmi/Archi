@@ -37,4 +37,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.roomsOverlay{
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 

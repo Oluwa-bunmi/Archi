@@ -2,8 +2,6 @@ import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
-// import HeroOne from "../src/assets/HeroImageOne.jpg";
-// import HeroTwo from "../src/assets/HeroImageTwo.jpg";
 import Navbar from "./Navbar";
 const Carousel = () => {
   const [backgroundImage, setBackgroundImage] = useState(
