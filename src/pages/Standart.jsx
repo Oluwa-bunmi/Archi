@@ -1,13 +1,12 @@
 import { ImCheckmark } from "react-icons/im";
+import { standartFacilities } from "../constants/data";
 import { Link } from "react-router-dom";
-import { deluxeFacilities } from "../constants/data";
 import Pagination from "../components/Pagination";
-const Deluxe = () => {
-
+const Standart = () => {
   return (
     <>
       <Pagination />
-      <section className="text-[#606060] text-[16px] font-roboto font-light leading-[1.8em] grid grid-cols-3 gap-7 items-center md:px-28 px-5 py-[90px] bg-[#F7F5F0]">
+      <section className="text-[#606060] text-[16px] font-roboto font-light leading-[1.8em] grid grid-cols-3 gap-14 items-center md:px-28 px-5 py-[90px] bg-[#F7F5F0]">
         <div className="col-span-2">
           <h3 className="text-brownie font-garamond text-[20px] font-semibold">
             The Archi Hotel
@@ -40,7 +39,7 @@ const Deluxe = () => {
         <div>
           <div className="bg-lightBg text-center py-[30px] rounded-[2px]">
             <h1 className=" text-[64px] font-garamond font-semibold text-brownie">
-              <span> $60</span>
+              <span> $49</span>
               <span className="text-xl font-normal font-roboto">/night</span>
             </h1>
           </div>
@@ -48,20 +47,12 @@ const Deluxe = () => {
             Room Facilities
           </h2>
           <ul>
-            {deluxeFacilities.map((items, i) => (
+            {standartFacilities.map((item, i) => (
               <li className="flex items-center gap-3">
                 <ImCheckmark className="text-brownie" />
-                {items.point}
+                {item.point}
               </li>
             ))}
-            {/* <li>70 sqft room </li>
-            <li>Comfortable mattress bed </li>
-            <li>High quality bed sheets </li>
-            <li>48" Ultra HD TV </li>
-            <li>Coffee and tea makers </li>
-            <li>Hot & cold bathing </li>
-            <li>Free WIFI internet connection </li>
-            <li>Connecting room by request </li> */}
           </ul>
         </div>
       </section>
@@ -69,4 +60,4 @@ const Deluxe = () => {
   );
 };
 
-export default Deluxe;
+export default Standart;

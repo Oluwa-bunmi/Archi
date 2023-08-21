@@ -16,7 +16,7 @@ const Suites = () => {
       <div className="grid gap-7 lg:grid-cols-3">
         {suitesInfo.map((item, i) => (
           <div className="relative h-[350px] overflow-hidden group container" key={i}>
-            <Link className="absolute w-full min-h-[100%] z-[1] bg-borderHr">
+            <Link to={item.location} className="absolute w-full min-h-[100%] z-[1] bg-borderHr">
               <div className="slideIn m-[30px] w-[83%] text-white absolute bottom-0 group-hover:w-full group-hover:h-full group-hover:bg-dark group-hover:m-0 group-hover:p-[30px]">
                 <p className="font-garamond text-[24px] mt-6 lg:mt-0 xl:mt-6">{item.price}</p>
                 <div className="flex gap-2 border-b items-center border-light pb-[10px]">

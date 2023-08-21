@@ -10,8 +10,9 @@ import { BiSolidTrafficCone } from "react-icons/bi";
 export const suitesInfo = [
   {
     price: "$49/night",
-    room: "Standard Room",
+    room: "Standart Room",
     image: firstSuite,
+    location: "/standart-room",
     details:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
@@ -19,6 +20,7 @@ export const suitesInfo = [
     price: "$69/night",
     room: "Deluxe Room",
     image: secondSuite,
+    location: "/deluxe-room",
     details:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
@@ -26,6 +28,7 @@ export const suitesInfo = [
     price: "$99/night",
     room: "Luxury Room",
     image: thirdSuite,
+    location: "/luxury-room",
     details:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
@@ -67,4 +70,75 @@ export const features = [
     content:
       "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.",
   },
+];
+export const standartFacilities = [
+  {
+    point: "1 - 2 persons",
+  },
+  {
+    point: "70 sqft room",
+  },
+  {
+    point: "Full-Length Mirror:",
+  },
+  {
+    point: "Comfortable mattress bed",
+  },
+  {
+    point: "High quality bed sheets",
+  },
+  {
+    point: "48' Ultra HD TV",
+  },
+  {
+    point: "Coffee and tea makers",
+  },
+  {
+    point: "Hot & cold bathing",
+  },
+  {
+    point: "Free WIFI internet connection",
+  },
+];
+export const deluxeFacilities = [
+  {
+    point: "Laundry and Dry Cleaning Services",
+  },
+  {
+    point: "Childcare Service",
+  },
+  {
+    point: "Soundproofing",
+  },
+  {
+    point: "Fitness Center Access",
+  },
+  {
+    point: "Pillow Menu",
+  },
+  {
+    point: "Pet-Friendly Amenities",
+  },
+  {
+    point: "Hot & cold bathing",
+  },
+  {
+    point: "Free WIFI internet connection",
+  },
+  {
+    point: "Connecting room by request",
+  },
+];
+export const roomDetails = [
+  {
+    deluxeFirstDetail:
+      "Lorem ipsum dolore voluptate dolor consectetur qui magna veniam deserunt est dolor tempor ex esse tempor adipisicing ut et amet sed et est aliquip cupidatat quis dolor consectetur velit laboris pariatur nisi adipisicing adipisicing cillum dolore consectetur dolor ea velit dolor deserunt in dolore aute sed amet dolore ad aliqua cillum nisi irure culpa aliquip culpa culpa quis nisi dolore pariatur ullamco nostrud reprehenderit anim voluptate dolore aliquip est in magna minim officia proident officia ad consequat sint cillum et nisi incididunt duis non laborum occaecat.",
+  },
+  {
+    deluxeSecondDetail:
+      "Lorem ipsum esse adipisicing eiusmod culpa sed reprehenderit ut cupidatat in sint sed officia in irure proident tempor duis in esse quis aute ex. Excepteur et commodo in incididunt quis cupidatat aute labore ea exercitation nulla elit elit pariatur non nisi reprehenderit officia sit adipisicing velit.",
+  },
+  {
+    standartFirstDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto praesentium molestiae quidem rem repudiandae pariatur aliquam dolore labore, placeat facilis! Blanditiis quia maxime asperiores saepe aliquid quasi necessitatibus maiores molestias in distinctio nam nobis, natus illum. Voluptas distinctio harum, dolor a sapiente qui aspernatur iure! Animi inventore delectus tempora libero. Delectus ducimus at esse, laudantium atque voluptas quis provident nam doloribus officia eveniet eaque rem similique temporibus. Asperiores, aliquam ex. Repudiandae distinctio dolorem nisi voluptatibus, nam accusamus in voluptates et corporis quaerat numquam explicabo, repellendus praesentium ad quas minus."
+  }
 ];

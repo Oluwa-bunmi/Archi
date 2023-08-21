@@ -10,6 +10,7 @@ export default {
         creamy: "rgb(239, 231, 211)",
         borderHr: "rgba(0,0,0,.1)",
         overlay: "rgba(0,0,0, .5)",
+        lightBg: "rgba(0,0,0, 0.05)",
       },
       fontFamily: {
         roboto: "'Roboto', sans-serif",
