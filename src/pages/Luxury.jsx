@@ -1,8 +1,8 @@
 import { ImCheckmark } from "react-icons/im";
-import { standartFacilities } from "../constants/data";
+import { luxuryFacilities } from "../constants/data";
 import { Link } from "react-router-dom";
 import Pagination from "../components/Pagination";
-const Standart = () => {
+const Luxury = () => {
   return (
     <>
       <Pagination />
@@ -12,7 +12,7 @@ const Standart = () => {
             The Archi Hotel
           </h3>
           <h1 className="text-[#222] font-garamond text-[40px] sm:text-[48px] font-semibold leading-[1.2em]">
-            Standart Room
+            Luxury Room
           </h1>
           <p>
             Lorem ipsum dolore voluptate dolor consectetur qui magna veniam
@@ -47,7 +47,7 @@ const Standart = () => {
             Room Facilities
           </h2>
           <ul>
-            {standartFacilities.map((item, i) => (
+            {luxuryFacilities.map((item, i) => (
               <li className="flex items-center gap-3">
                 <ImCheckmark className="text-brownie" />
                 {item.point}
@@ -60,4 +60,4 @@ const Standart = () => {
   );
 };
 
-export default Standart;
+export default Luxury;

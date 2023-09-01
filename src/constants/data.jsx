@@ -129,6 +129,36 @@ export const deluxeFacilities = [
     point: "Connecting room by request",
   },
 ];
+export const luxuryFacilities = [
+  {
+    point: "Connecting/adjoining rooms available",
+  },
+  {
+    point: "Laundry and Dry Cleaning Services",
+  },
+  {
+    point: "Childcare Service",
+  },
+  {
+    point: "Free cribs/infant beds",
+  },
+  {
+    point: "Soundproofing",
+  },
+  {
+    point: "Pillow Menu",
+  },
+  {
+    point: "Pet-Friendly Amenities",
+  },
+
+  {
+    point: "Premium TV channels",
+  },
+  {
+    point: "Free toiletries",
+  },
+];
 export const roomDetails = [
   {
     deluxeFirstDetail:
@@ -142,3 +172,15 @@ export const roomDetails = [
     standartFirstDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto praesentium molestiae quidem rem repudiandae pariatur aliquam dolore labore, placeat facilis! Blanditiis quia maxime asperiores saepe aliquid quasi necessitatibus maiores molestias in distinctio nam nobis, natus illum. Voluptas distinctio harum, dolor a sapiente qui aspernatur iure! Animi inventore delectus tempora libero. Delectus ducimus at esse, laudantium atque voluptas quis provident nam doloribus officia eveniet eaque rem similique temporibus. Asperiores, aliquam ex. Repudiandae distinctio dolorem nisi voluptatibus, nam accusamus in voluptates et corporis quaerat numquam explicabo, repellendus praesentium ad quas minus."
   }
 ];
+
+
+
+/*
+ Free cribs/infant beds
+ Connecting/adjoining rooms available
+ Private bathroom
+ Premium TV channels
+ Television
+ Free toiletries
+ 
+*/
