@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -28,10 +28,12 @@ const Navbar = () => {
             : "lg:border-b h-full border-light flex justify-between items-center text-white md:px-28 px-5"
         }
       >
-        <img src={logo} alt="Logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
         <ul className="hidden lg:flex gap-8 text-[18px] font-roboto">
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink>Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
             <NavLink>Services</NavLink>
@@ -43,7 +45,12 @@ const Navbar = () => {
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
-        <button className="hidden transition ease-in-out group hover:bg-brownie hover:text-black hover:border-brownie lg:flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px]">
+        <button
+          onClick={() => {
+            window.location.href = "/booking";
+          }}
+          className="hidden transition ease-in-out group hover:bg-brownie hover:text-black hover:border-brownie lg:flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px]"
+        >
           BOOKING
           <span>
             <MdOutlineKeyboardArrowRight className="text-brownie text-[25px] font-semibold group-hover:text-black" />

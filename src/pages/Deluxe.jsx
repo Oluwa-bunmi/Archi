@@ -40,7 +40,7 @@ const Deluxe = () => {
         <div>
           <div className="bg-lightBg text-center py-[30px] rounded-[2px]">
             <h1 className=" text-[64px] font-garamond font-semibold text-brownie">
-              <span> $60</span>
+              <span> ₦65,000</span>
               <span className="text-xl font-normal font-roboto">/night</span>
             </h1>
           </div>

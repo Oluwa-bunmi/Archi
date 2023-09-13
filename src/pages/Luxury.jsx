@@ -39,7 +39,7 @@ const Luxury = () => {
         <div>
           <div className="bg-lightBg text-center py-[30px] rounded-[2px]">
             <h1 className=" text-[64px] font-garamond font-semibold text-brownie">
-              <span> $49</span>
+              <span> ₦100,000</span>
               <span className="text-xl font-normal font-roboto">/night</span>
             </h1>
           </div>

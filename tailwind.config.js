@@ -20,6 +20,7 @@ export default {
       backgroundImage: {
         testimonialBg: "url('../src/assets/testimonialBg.jpg')",
         contactBg: "url('../src/assets/contactBg.jpg')",
+        bookingBg: "url('../src/assets/bookingBg.jpg')",
         roomsOverlay:
           "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%)",
       },

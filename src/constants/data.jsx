@@ -9,7 +9,7 @@ import { BiSolidTrafficCone } from "react-icons/bi";
 
 export const suitesInfo = [
   {
-    price: "$49/night",
+    price: "₦30,000/night",
     room: "Standart Room",
     image: firstSuite,
     location: "/standart-room",
@@ -17,7 +17,7 @@ export const suitesInfo = [
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
   {
-    price: "$69/night",
+    price: "₦65,000/night",
     room: "Deluxe Room",
     image: secondSuite,
     location: "/deluxe-room",
@@ -25,7 +25,7 @@ export const suitesInfo = [
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
   {
-    price: "$99/night",
+    price: "₦100,000/night",
     room: "Luxury Room",
     image: thirdSuite,
     location: "/luxury-room",

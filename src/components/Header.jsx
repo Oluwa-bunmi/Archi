@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -14,10 +14,12 @@ const Header = () => {
   return (
     <header className="bg-[#18191B] w-full h-[75px] fixed top-0 left-0 z-10">
       <div className="flex h-full justify-between items-center text-white md:px-28 px-5">
-        <img src={logo} alt="Logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
         <ul className="hidden lg:flex gap-8 text-[18px] font-roboto">
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink>Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
             <NavLink>Services</NavLink>
@@ -26,7 +28,7 @@ const Header = () => {
             <NavLink>Blog</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink>Contact</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
         <button className="hidden transition ease-in-out group hover:bg-[#FAB702] hover:text-black hover:border-brownie lg:flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px]">
