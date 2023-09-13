@@ -37,8 +37,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.roomsOverlay{
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+.roomsOverlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 @keyframes slideFromRight {
   0% {
@@ -48,4 +52,16 @@
     transform: translateX(0);
   }
 }
+/* RoomSelection.css */
 
+.room-container {
+  /* display: inline-block;
+  margin: 10px; */
+  transition: transform 0.3s; /* Smooth transition for the transform property */
+}
+
+.selected-image {
+  transform: scale(1);
+  /* Zoom-in effect when the image is selected */
+  border: 2px solid red;
+}
