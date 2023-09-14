@@ -52,16 +52,3 @@
     transform: translateX(0);
   }
 }
-/* RoomSelection.css */
-
-.room-container {
-  /* display: inline-block;
-  margin: 10px; */
-  transition: transform 0.3s; /* Smooth transition for the transform property */
-}
-
-.selected-image {
-  transform: scale(1);
-  /* Zoom-in effect when the image is selected */
-  border: 2px solid red;
-}
