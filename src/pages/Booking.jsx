@@ -3,8 +3,17 @@ import { suitesInfo } from "../constants/data";
 import { useState } from "react";
 const Booking = () => {
   const [selectedRoom, setSelectedRoom] = useState("");
-  const handleImageClick = (roomType) => {
+  const [roomPrice, setRoomPrice] = useState("");
+  const [numberOfGuests, setNumberOfGuests] = useState("");
+  const handleImageClick = (roomType, price, guests) => {
     setSelectedRoom(roomType);
+    // const numericPrice = price.replace(/\D/g, "");
+    // setRoomPrice(numericPrice);
+    const numericPrice = parseInt(price.replace(/\D/g, ""), 10);
+
+    // Format the numeric price with commas
+    setRoomPrice(numericPrice.toLocaleString());
+    setNumberOfGuests(guests);
   };
   return (
     <>
@@ -23,7 +32,9 @@ const Booking = () => {
             {suitesInfo.map((item, i) => (
               <div
                 key={i}
-                onClick={() => handleImageClick(item.room)}
+                onClick={() =>
+                  handleImageClick(item.room, item.price, item.guests)
+                }
                 className="transition-transform text-[#999] text-[18px]"
               >
                 <img
@@ -62,7 +73,7 @@ const Booking = () => {
                   type="date"
                   name=""
                   id=""
-                  className="w-full p-[10px] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                  className="w-full text-base font-roboto p-[10px] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
                 />
               </div>
               <div>
@@ -77,7 +88,7 @@ const Booking = () => {
                   type="date"
                   name=""
                   id=""
-                  className="w-full p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                  className="w-full text-base font-roboto p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
                 />
               </div>
               <div>
@@ -88,10 +99,15 @@ const Booking = () => {
                   Guests
                 </label>
                 <br />
-                <select className="w-full p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr">
-                  <option value="">1</option>
-                  <option value="">1-3</option>
-                  <option value="">1-6</option>
+                <select
+                  value={numberOfGuests}
+                  readOnly
+                  className="w-full text-base font-roboto p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                >
+                  <option value="">Number of guests</option>
+                  <option value="1">1</option>
+                  <option value="1-3">1-3</option>
+                  <option value="1-5">1-5</option>
                 </select>
               </div>
 
@@ -105,8 +121,9 @@ const Booking = () => {
                 <br />
                 <select
                   value={selectedRoom}
-                  onChange={(e) => setSelectedRoom(e.target.value)}
-                  className="w-full p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                  readOnly
+                  //   onChange={(e) => setSelectedRoom(e.target.value)}
+                  className="w-full text-base font-roboto p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
                 >
                   <option value="">Select a Room</option>
                   {suitesInfo.map((item, i) => (
@@ -117,9 +134,70 @@ const Booking = () => {
                 </select>
               </div>
             </section>
-            <section>
-                
+            {/* <h3 className="mt-5">Enter your details</h3> */}
+            <section className="grid grid-cols-2 gap-5">
+              <div className="grid gap-5 mt-5">
+                <div>
+                  <label
+                    htmlFor=""
+                    className="text-[#222] text-xl font-garamond font-semibold"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Jane Doe"
+                    className="w-full p-[10px] text-base font-roboto text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor=""
+                    className="text-[#222] text-xl font-garamond font-semibold"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="08012345678"
+                    className="w-full text-base font-roboto p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                  />
+                </div>
+              </div>
+              <div className="grid gap-5 mt-5">
+                <div>
+                  <label
+                    htmlFor=""
+                    className="text-[#222] text-xl font-garamond font-semibold"
+                  >
+                    Price (in ₦):
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Amount"
+                    value={roomPrice}
+                    readOnly
+                    className="w-full text-base font-roboto p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor=""
+                    className="text-[#222] text-xl font-garamond font-semibold"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="you@example.com"
+                    className="w-full text-base font-roboto p-[10px] text-[#333] mt-5 bg-transparent outline-none rounded-[5px] border border-borderHr"
+                  />
+                </div>
+              </div>
             </section>
+            <button className="tracking-[2px] mt-5 text-white w-fit bg-brownie py-[10px] px-5 text-[12px] font-medium hover:bg-[#b89970]">
+              PROCEED TO PAY
+            </button>
           </form>
         </section>
       </section>

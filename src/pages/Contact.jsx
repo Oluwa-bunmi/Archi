@@ -80,12 +80,11 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="text-[12px] mt-[20px] font-medium transition ease-in-out hover:bg-[#FAB702] hover:text-black hover:border-brownie lg:flex items-center py-2 px-5 border border-light tracking-[2px] rounded-[2px]"
+            className="text-[12px] mt-5 font-medium transition ease-in-out hover:bg-[#FAB702] hover:text-black hover:border-brownie lg:flex items-center py-2 px-5 border border-light tracking-[2px] rounded-[2px]"
           >
             SUBMIT FORM
           </button>
         </form>
-        {/* <div> */}
         <textarea
           name=""
           id=""

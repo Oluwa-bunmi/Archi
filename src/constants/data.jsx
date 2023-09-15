@@ -13,6 +13,7 @@ export const suitesInfo = [
     room: "Standart Room",
     image: firstSuite,
     location: "/standart-room",
+    guests: 1,
     details:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
@@ -21,6 +22,8 @@ export const suitesInfo = [
     room: "Deluxe Room",
     image: secondSuite,
     location: "/deluxe-room",
+    guests: "1-3",
+
     details:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
@@ -29,6 +32,7 @@ export const suitesInfo = [
     room: "Luxury Room",
     image: thirdSuite,
     location: "/luxury-room",
+    guests: "1-5",
     details:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, sequi atque impedit beatae perferendis at magni officia ut nulla iure illo nam, fuga dolor vero!",
   },
@@ -169,11 +173,10 @@ export const roomDetails = [
       "Lorem ipsum esse adipisicing eiusmod culpa sed reprehenderit ut cupidatat in sint sed officia in irure proident tempor duis in esse quis aute ex. Excepteur et commodo in incididunt quis cupidatat aute labore ea exercitation nulla elit elit pariatur non nisi reprehenderit officia sit adipisicing velit.",
   },
   {
-    standartFirstDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto praesentium molestiae quidem rem repudiandae pariatur aliquam dolore labore, placeat facilis! Blanditiis quia maxime asperiores saepe aliquid quasi necessitatibus maiores molestias in distinctio nam nobis, natus illum. Voluptas distinctio harum, dolor a sapiente qui aspernatur iure! Animi inventore delectus tempora libero. Delectus ducimus at esse, laudantium atque voluptas quis provident nam doloribus officia eveniet eaque rem similique temporibus. Asperiores, aliquam ex. Repudiandae distinctio dolorem nisi voluptatibus, nam accusamus in voluptates et corporis quaerat numquam explicabo, repellendus praesentium ad quas minus."
-  }
+    standartFirstDetail:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto praesentium molestiae quidem rem repudiandae pariatur aliquam dolore labore, placeat facilis! Blanditiis quia maxime asperiores saepe aliquid quasi necessitatibus maiores molestias in distinctio nam nobis, natus illum. Voluptas distinctio harum, dolor a sapiente qui aspernatur iure! Animi inventore delectus tempora libero. Delectus ducimus at esse, laudantium atque voluptas quis provident nam doloribus officia eveniet eaque rem similique temporibus. Asperiores, aliquam ex. Repudiandae distinctio dolorem nisi voluptatibus, nam accusamus in voluptates et corporis quaerat numquam explicabo, repellendus praesentium ad quas minus.",
+  },
 ];
-
-
 
 /*
  Free cribs/infant beds
