@@ -73,10 +73,10 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
-              <NavLink to="/services">Services</NavLink>
+              <NavLink to="/">Services</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/">Blog</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
               <NavLink to="/contact">Contact</NavLink>
