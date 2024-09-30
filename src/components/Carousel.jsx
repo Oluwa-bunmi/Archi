@@ -3,6 +3,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 const Carousel = () => {
   const [backgroundImage, setBackgroundImage] = useState(
     "../src/assets/HeroImageOne.jpg"
@@ -45,17 +46,15 @@ const Carousel = () => {
           className="text-[41px] md:text-[55px] lg:text-[84px] text-white font-thin font-garamond leading-[38px] md:leading-[52px] lg:leading-[79px] text-center"
           dangerouslySetInnerHTML={{ __html: displayText }}
         />
-        <button
-          onClick={() => {
-            window.location.href = "/booking";
-          }}
+        <Link to="/booking"
+         
           className="text-white transition ease-in-out flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px] group hover:text-black hover:bg-white"
         >
           BOOK NOW
           <span>
             <MdOutlineKeyboardArrowRight className="text-brownie text-[25px] font-semibold group-hover:text-black" />
           </span>
-        </button>
+        </Link>
         <div className="absolute -translate-x-0 translate-y-[-50%] right-0.5 sm:right-5 text-2xl rounded-full sm:p-2 sm:bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight size={30} onClick={handleClick} />
         </div>
