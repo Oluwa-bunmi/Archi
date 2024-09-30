@@ -25,7 +25,7 @@ const Header = () => {
             <NavLink>Services</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink>Blog</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
             <NavLink to="/contact">Contact</NavLink>

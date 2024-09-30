@@ -33,7 +33,10 @@ const Deluxe = () => {
             labore ea exercitation nulla elit elit pariatur non nisi
             reprehenderit officia sit adipisicing velit.
           </p>
-          <Link className="tracking-[2px] text-white w-fit bg-brownie py-[10px] px-5 text-[12px] font-medium hover:bg-[#b89970]">
+          <Link
+            to="/booking"
+            className="tracking-[2px] text-white w-fit bg-brownie py-[10px] px-5 text-[12px] font-medium hover:bg-[#b89970]"
+          >
             BOOK NOW
           </Link>
         </div>

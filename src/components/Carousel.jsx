@@ -45,7 +45,12 @@ const Carousel = () => {
           className="text-[41px] md:text-[55px] lg:text-[84px] text-white font-thin font-garamond leading-[38px] md:leading-[52px] lg:leading-[79px] text-center"
           dangerouslySetInnerHTML={{ __html: displayText }}
         />
-        <button className="text-white transition ease-in-out flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px] group hover:text-black hover:bg-white">
+        <button
+          onClick={() => {
+            window.location.href = "/booking";
+          }}
+          className="text-white transition ease-in-out flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px] group hover:text-black hover:bg-white"
+        >
           BOOK NOW
           <span>
             <MdOutlineKeyboardArrowRight className="text-brownie text-[25px] font-semibold group-hover:text-black" />
