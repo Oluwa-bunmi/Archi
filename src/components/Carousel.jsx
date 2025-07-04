@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 const Carousel = () => {
   const [backgroundImage, setBackgroundImage] = useState(
-    "../src/assets/HeroImageOne.jpg"
+    "/HeroImageOne.jpg"
   );
   const [displayText, setDisplayText] = useState(
     "Enjoy a Luxury<br>Experience"
@@ -15,12 +15,12 @@ const Carousel = () => {
   const handleClick = () => {
     if (
       backgroundImage ===
-      "../src/assets/HeroImageOne.jpg"
+      "/HeroImageOne.jpg"
     ) {
-      setBackgroundImage("../src/assets/HeroImageTwo.jpg");
+      setBackgroundImage("/HeroImageTwo.jpg");
       setDisplayText("Your Perfect<br>Healing");
     } else {
-      setBackgroundImage("../src/assets/HeroImageOne.jpg");
+      setBackgroundImage("/HeroImageOne.jpg");
       setDisplayText("Enjoy a Luxury<br>Experience");
     }
   };
