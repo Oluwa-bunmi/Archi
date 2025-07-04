@@ -6,6 +6,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+  scroll-behavior: smooth;
+}
 /* *{
     font-family: 'Cormorant Garamond', serif;
 } */

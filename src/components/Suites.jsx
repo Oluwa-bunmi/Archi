@@ -4,7 +4,7 @@ import { BiCircle } from "react-icons/bi";
 import { suitesInfo } from "../constants/data";
 const Suites = () => {
   return (
-    <section className="bg-[#F7F5F0] md:px-28 px-5 py-20">
+    <section id="rooms" className="bg-[#F7F5F0] md:px-28 px-5 py-20">
       <h1 className="text-[45px] leading-[1.2em] sm:text-[48px] font-garamond font-semibold text-center">
         Rooms & Suites
       </h1>

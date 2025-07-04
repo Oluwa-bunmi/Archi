@@ -36,10 +36,10 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink>Services</NavLink>
+            <NavLink to="#features">Features</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink to="/">Blog</NavLink>
+            <NavLink to="#rooms">Rooms</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
             <NavLink to="/contact">Contact</NavLink>
@@ -73,10 +73,10 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
-              <NavLink to="/">Services</NavLink>
+              <NavLink to="#features">Features</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
-              <NavLink to="/">Blog</NavLink>
+              <NavLink to="#rooms">Rooms</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
               <NavLink to="/contact">Contact</NavLink>

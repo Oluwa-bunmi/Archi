@@ -22,21 +22,23 @@ const Header = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink>Services</NavLink>
+            <NavLink to="#features">Features</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
-            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="#rooms">Rooms</NavLink>
           </li>
           <li className="hover:text-brownie transition ease-in-out delay-300">
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
-        <button className="hidden transition ease-in-out group hover:bg-[#FAB702] hover:text-black hover:border-brownie lg:flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px]">
-          BOOKING
-          <span>
-            <MdOutlineKeyboardArrowRight className="text-[#FAB702]text-[25px] font-semibold group-hover:text-black" />
-          </span>
-        </button>
+        <Link to="/booking">
+          <button className="hidden transition ease-in-out group hover:bg-[#FAB702] hover:text-black hover:border-brownie lg:flex items-center py-1 px-4 border border-light tracking-[2px] rounded-[2px]">
+            BOOKING
+            <span>
+              <MdOutlineKeyboardArrowRight className="text-[#FAB702]text-[25px] font-semibold group-hover:text-black" />
+            </span>
+          </button>
+        </Link>
 
         {/* Hamburger toggle */}
         <div className="lg:hidden text-white" onClick={handleNav}>
@@ -56,10 +58,10 @@ const Header = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
-              <NavLink to="/services">Services</NavLink>
+              <NavLink to="#features">Features</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="#rooms">Rooms</NavLink>
             </li>
             <li className="py-[10px] border-b text-[#eceff3] border-[#333]">
               <NavLink to="/contact">Contact</NavLink>

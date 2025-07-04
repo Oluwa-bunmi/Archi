@@ -9,11 +9,11 @@ const Pagination = () => {
   };
   const getBackgroundImage = () => {
     if (activeButton === "button1") {
-      return "url(../src/assets/deluxeOne.jpg)";
+      return "url(/deluxeOne.jpg)";
     } else if (activeButton === "button2") {
-      return "url(../src/assets/deluxeTwo.jpg)";
+      return "url(/deluxeTwo.jpg)";
     } else if (activeButton === "button3") {
-      return "url(../src/assets/deluxeThree.jpg)";
+      return "url(/deluxeThree.jpg)";
     } else {
       return "url(../src/assets/deluxeOne.jpg)";
     }

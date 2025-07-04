@@ -2,7 +2,7 @@ import { BsDot } from "react-icons/bs";
 import { features } from "../constants/data";
 const Feautures = () => {
   return (
-    <div className="bg-creamy md:px-28 px-5 py-20">
+    <section id="features" className="bg-creamy md:px-28 px-5 py-20">
       <h1 className="text-[40px] leading-[1.2em] sm:text-[48px] font-garamond font-semibold text-center">
         Features Highlight
       </h1>
@@ -28,7 +28,7 @@ const Feautures = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

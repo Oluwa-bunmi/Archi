@@ -53,16 +53,13 @@ const Footer = () => {
             Our Rooms
           </li>
           <li className="border-b border-[#222] py-[2px]">
-            <Link>Standart Room </Link>
+            <Link to="/standart-room">Standart Room </Link>
           </li>
           <li className="border-b border-[#222] py-[2px]">
-            <Link>Deluxe Room </Link>
+            <Link to="/deluxe-room">Deluxe Room </Link>
           </li>
           <li className="border-b border-[#222] py-[2px]">
-            <Link>Luxury Room </Link>
-          </li>
-          <li className="border-b border-[#222] py-[2px]">
-            <Link>President Room </Link>
+            <Link to="/luxury-room">Luxury Room </Link>
           </li>
         </ul>
         <ul>
@@ -83,7 +80,7 @@ const Footer = () => {
       </div>
       <div className="bg-[#0b0b0b] font-roboto text-[16px] font-light lg:flex justify-between px-5 md:px-28 py-[30px] text-[#ccc]">
         <p>
-          © Copyright 2023 - Archi by
+          © Copyright 2025 - Archi by
           <span className="text-[#bf9156] "> Jummy</span>
         </p>
         <div className="flex items-center gap-4 text-xl mt-4 sm:mt-7 lg:mt-0">
